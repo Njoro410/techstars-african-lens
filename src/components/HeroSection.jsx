@@ -29,7 +29,7 @@ const HeroSection = () => {
         <section className="md:mt-12 lg:mt-24">
           <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
             <div className="relative top-[20%] p-4  text-white">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold md:w-2/4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold md:w-2/4 mt-16 md:mt-4">
                 <span className="text-yellow-400">Discover</span> and{" "}
                 <span className="text-yellow-400">Celebrate</span> the Richness
                 of <span className="text-yellow-400">African Artistry</span>

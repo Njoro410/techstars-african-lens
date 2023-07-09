@@ -47,13 +47,14 @@ const Login = () => {
         </h2>
         <p className="text-sm text-center text-gray-400">
           Dont have account?
-          <Link to={"/register"}
-          href="#"
-          rel="noopener noreferrer"
-          className="focus:underline hover:underline"
-        >
-          Sign up here
-        </Link>
+          <Link
+            to={"/register"}
+            href="#"
+            rel="noopener noreferrer"
+            className="focus:underline hover:underline"
+          >
+            Sign up here
+          </Link>
         </p>
         <div className="my-6 space-y-4">
           <button
@@ -77,7 +78,12 @@ const Login = () => {
           <p className="px-3 text-gray-400">OR</p>
           <hr className="w-full text-gray-400" />
         </div>
-        <form noValidate="" action="" className="space-y-8" onSubmit={handleSubmit}>
+        <form
+          noValidate=""
+          action=""
+          className="space-y-8"
+          onSubmit={handleSubmit}
+        >
           <div className="space-y-4">
             <div className="space-y-2">
               <label htmlFor="email" className="block text-sm">

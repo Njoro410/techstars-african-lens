@@ -62,9 +62,16 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">
+
+        <Link to={"/"}
+          href="#"
+          rel="noopener noreferrer"
+          className="focus:underline hover:underline"
+        >
+                 <a className="btn btn-ghost normal-case text-xl">
           African <span className="text-yellow-400">Lens</span>
         </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

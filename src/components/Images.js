@@ -1,12 +1,36 @@
-// import img1 from "../assets/stockimages/DSC_0001.jpg"
+/* eslint-disable no-unused-vars */
+import img1 from "../assets/stockimages/DSC_0001.jpg"
+import img2 from "../assets/stockimages/DSC_0014.jpg"
+import img3 from "../assets/stockimages/DSC_0022.jpg"
+import img4 from "../assets/stockimages/DSC_0357.jpg"
+import img5 from "../assets/stockimages/DSC_0015 (1).jpg"
+import img6 from "../assets/stockimages/DSC_0361.jpg"
+import img7 from "../assets/stockimages/DSC_0364.jpg"
+import img8 from "../assets/stockimages/DSC_0367.jpg"
+import img9 from "../assets/stockimages/DSC_0307.jpg"
+import img10 from "../assets/stockimages/DSC_0314.jpg"
+import img11 from "../assets/stockimages/DSC_0025.jpg"
+import img12 from "../assets/stockimages/DSC_0072.jpg"
+import img13 from "../assets/stockimages/DSC_0364.jpg"
+import img14 from "../assets/stockimages/DSC_0296.jpg"
+import img15 from "../assets/stockimages/DSC_0289.jpg"
+import img16 from "../assets/stockimages/DSC_0317.jpg"
+import img17 from "../assets/stockimages/DSC_0172.jpg"
+import img18 from "../assets/stockimages/DSC_0177.jpg"
+import img19 from "../assets/stockimages/DSC_0303.jpg"
+import img20 from "../assets/stockimages/DSC_0314.jpg"
+import img21 from "../assets/stockimages/DSC_0367.jpg"
+import img22 from "../assets/stockimages/DSC_0303.jpg"
+import img23 from "../assets/stockimages/DSC_0076.jpg"
+import img24 from "../assets/stockimages/DSC_0185.jpg"
 
 const images = [
   {
     id: 1,
-    src: "https://galleries.page.link/nbWLN",
-    original: "https://galleries.page.link/nbWLN",
-    width: 320,
-    height: 174,
+    src: img1,
+    original: img1,
+    width: 700,
+    height: 800,
     tags: [
       { value: "Nature", title: "Nature" },
       { value: "Flora", title: "Flora" },
@@ -15,40 +39,40 @@ const images = [
   },
   {
     id: 2,
-    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-    original: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+    src: img2,
+    original: img2,
     width: 320,
     height: 212,
     caption: "Boats (Jeshu John - designerspics.com)",
   },
   {
     id: 3,
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-    original: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    src: img3,
+    original: img3,
     width: 320,
     height: 212,
     caption: "Color Pencils (Jeshu John - designerspics.com)",
   },
   {
     id: 4,
-    src: "https://c7.staticflickr.com/9/8546/28354329294_bb45ba31fa_b.jpg",
-    original: "https://c7.staticflickr.com/9/8546/28354329294_bb45ba31fa_b.jpg",
+    src: img4,
+    original: img4,
     width: 320,
     height: 213,
     caption: "Red Apples with other Red Fruit (foodiesfeed.com)",
   },
   {
     id: 5,
-    src: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_b.jpg",
-    original: "https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_b.jpg",
+    src: img5,
+    original: img5,
     width: 320,
     height: 183,
     caption: "37H (gratispgraphy.com)",
   },
   {
     id: 6,
-    src: "https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_b.jpg",
-    original: "https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_b.jpg",
+    src: img6,
+    original: img6,
     width: 240,
     height: 320,
     tags: [{ value: "Nature", title: "Nature" }],
@@ -56,16 +80,16 @@ const images = [
   },
   {
     id: 7,
-    src: "https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_b.jpg",
-    original: "https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_b.jpg",
+    src: img7,
+    original: img7,
     width: 320,
     height: 190,
     caption: "286H (gratisography.com)",
   },
   {
     id: 8,
-    src: "https://c7.staticflickr.com/9/8569/28941134686_d57273d933_b.jpg",
-    original: "https://c7.staticflickr.com/9/8569/28941134686_d57273d933_b.jpg",
+    src: img8,
+    original: img8,
     width: 320,
     height: 148,
     tags: [{ value: "People", title: "People" }],
@@ -73,16 +97,16 @@ const images = [
   },
   {
     id: 9,
-    src: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg",
-    original: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg",
+    src: img9,
+    original: img9,
     width: 320,
     height: 213,
     caption: "201H (gratisography.com)",
   },
   {
     id: 10,
-    src: "https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_b.jpg",
-    original: "https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_b.jpg",
+    src: img10,
+    original: img10,
     alt: "Big Ben - London",
     width: 248,
     height: 320,
@@ -90,8 +114,8 @@ const images = [
   },
   {
     id: 11,
-    src: "https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_b.jpg",
-    original: "https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_b.jpg",
+    src: img11,
+    original: img11,
     alt: "Red Zone - Paris",
     width: 320,
     height: 113,
@@ -100,8 +124,8 @@ const images = [
   },
   {
     id: 12,
-    src: "https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_b.jpg",
-    original: "https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_b.jpg",
+    src: img12,
+    original: img12,
     alt: "Wood Glass",
     width: 313,
     height: 320,
@@ -109,24 +133,24 @@ const images = [
   },
   {
     id: 13,
-    src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
-    original: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+    src: img13,
+    original: img13,
     width: 320,
     height: 213,
     caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
   },
   {
     id: 14,
-    src: "https://c4.staticflickr.com/9/8562/28897228731_ff4447ef5f_b.jpg",
-    original: "https://c4.staticflickr.com/9/8562/28897228731_ff4447ef5f_b.jpg",
+    src: img14,
+    original: img14,
     width: 320,
     height: 194,
     caption: "Old Barn (Tom Eversley - isorepublic.com)",
   },
   {
     id: 15,
-    src: "https://c2.staticflickr.com/8/7577/28973580825_d8f541ba3f_b.jpg",
-    original: "https://c2.staticflickr.com/8/7577/28973580825_d8f541ba3f_b.jpg",
+    src: img15,
+    original: img15,
     alt: "Cosmos Flower",
     width: 320,
     height: 213,
@@ -134,16 +158,16 @@ const images = [
   },
   {
     id: 16,
-    src: "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_b.jpg",
-    original: "https://c7.staticflickr.com/9/8106/28941228886_86d1450016_b.jpg",
+    src: img16,
+    original: img16,
     width: 271,
     height: 320,
     caption: "Orange Macro (Tom Eversley - isorepublic.com)",
   },
   {
     id: 17,
-    src: "https://c1.staticflickr.com/9/8330/28941240416_71d2a7af8e_b.jpg",
-    original: "https://c1.staticflickr.com/9/8330/28941240416_71d2a7af8e_b.jpg",
+    src: img17,
+    original: img17,
     width: 320,
     height: 213,
     tags: [
@@ -154,8 +178,8 @@ const images = [
   },
   {
     id: 18,
-    src: "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_b.jpg",
-    original: "https://c1.staticflickr.com/9/8707/28868704912_cba5c6600e_b.jpg",
+    src: img18,
+    original: img18,
     width: 320,
     height: 213,
     tags: [
@@ -166,24 +190,24 @@ const images = [
   },
   {
     id: 19,
-    src: "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_b.jpg",
-    original: "https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_b.jpg",
+    src: img19,
+    original: img19,
     width: 320,
     height: 213,
     caption: "Ropeman - Thailand (Tom Eversley - isorepublic.com)",
   },
   {
     id: 20,
-    src: "https://c4.staticflickr.com/8/7476/28973628875_069e938525_b.jpg",
-    original: "https://c4.staticflickr.com/8/7476/28973628875_069e938525_b.jpg",
+    src: img20,
+    original: img20,
     width: 320,
     height: 213,
     caption: "Time to Think (Tom Eversley - isorepublic.com)",
   },
   {
     id: 21,
-    src: "https://c6.staticflickr.com/9/8593/28357129133_f04c73bf1e_b.jpg",
-    original: "https://c6.staticflickr.com/9/8593/28357129133_f04c73bf1e_b.jpg",
+    src: img21,
+    original: img21,
     width: 320,
     height: 179,
     tags: [
@@ -194,8 +218,8 @@ const images = [
   },
   {
     id: 22,
-    src: "https://c6.staticflickr.com/9/8893/28897116141_641b88e342_b.jpg",
-    original: "https://c6.staticflickr.com/9/8893/28897116141_641b88e342_b.jpg",
+    src: img22,
+    original: img22,
     width: 320,
     height: 215,
     tags: [{ value: "People", title: "People" }],
@@ -203,16 +227,16 @@ const images = [
   },
   {
     id: 23,
-    src: "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_b.jpg",
-    original: "https://c1.staticflickr.com/9/8056/28354485944_148d6a5fc1_b.jpg",
+    src: img23,
+    original: img23,
     width: 257,
     height: 320,
     caption: "A photo by 贝莉儿 NG. (unsplash.com)",
   },
   {
     id: 24,
-    src: "https://c7.staticflickr.com/9/8824/28868764222_19f3b30773_b.jpg",
-    original: "https://c7.staticflickr.com/9/8824/28868764222_19f3b30773_b.jpg",
+    src: img24,
+    original: img2,
     width: 226,
     height: 320,
     caption: "A photo by Matthew Wiebe. (unsplash.com)",

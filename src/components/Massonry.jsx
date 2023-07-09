@@ -1,9 +1,15 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Modal from "react-modal";
 import { AiFillEye, AiFillHeart, AiOutlineShareAlt } from "react-icons/ai";
 import images from "./Images";
+import { UserAuth } from "../context/AuthContext";
+import { arrayUnion, doc, updateDoc } from "firebase/firestore";
+import { db } from "../Firebase";
+import Swal from "sweetalert2";
+
 // import { UserAuth } from "../context/AuthContext";
 
 const customStyles = {
@@ -26,7 +32,13 @@ Modal.setAppElement("#root");
 
 const Pictures = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  // const { user, logOut } = UserAuth();
+  const { user } = UserAuth();
+
+  const [details, setDetails] = useState({});
+  // eslint-disable-next-line no-unused-vars
+  const [open, setOpen] = useState(false);
+  const [like, setLike] = useState(false);
+  const imageID = doc(db, "users", `${user?.email}`);
 
   const handleClick = (index) => {
     setSelectedImage(images[index]);
@@ -35,6 +47,72 @@ const Pictures = () => {
   const handleCloseModal = () => {
     setSelectedImage(null);
   };
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-right",
+    iconColor: "green",
+    customClass: {
+      popup: "colored-toast",
+    },
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+  });
+
+  const likeImage = async () => {
+    if (user?.email) {
+      setLike(!like);
+      await updateDoc(imageID, {
+        likedPics: arrayUnion({
+          id: 1,
+        }),
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Gallery's Collection",
+        text: "Image liked",
+      });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Log in to like a picture",
+        icon: "error",
+      });
+    }
+  };
+
+  const download = () => {
+    if(!user?.email) {
+      Swal.fire({
+        title: "Error!",
+        text: "Must be logged in to download",
+        icon: "error",
+      });
+    } else {
+      Toast.fire({
+        icon: "success",
+        title: "Gallery's Collection",
+        text: "Download starting....",
+      });
+    }
+  }
+
+  const buy = () => {
+    if(!user?.email) {
+      Swal.fire({
+        title: "Error!",
+        text: "Must be logged in to buy",
+        icon: "error",
+      });
+    } else {
+      Toast.fire({
+        icon: "success",
+        title: "Gallery's Collection",
+        text: "Processing buying..",
+      });
+    }
+  }
 
   return (
     <div name="pictures" className="w-full h-full font-Acme">
@@ -70,18 +148,33 @@ const Pictures = () => {
                     <span className="flex items-center gap-3">
                       <AiFillEye /> 25486
                     </span>
-                    <span className="flex items-center gap-3">
-                      <AiFillHeart /> 12458562
-                    </span>
+                    <button onClick={likeImage} className="btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                        />
+                      </svg>
+                      1254866
+                    </button>
                     <span>
                       <AiOutlineShareAlt />
                     </span>
                   </div>
                   <div className="flex gap-5">
-                    <button className="btn btn-neutral px-8 py-3 text-lg font-semibold rounded bg-[#e38330]">
+                    
+                    <button onClick={download} className="btn btn-neutral px-8 py-3 text-lg font-semibold rounded bg-[#e38330]">
                       Free download
                     </button>
-                    <button className="btn btn-neutral px-8 py-3 text-lg font-semibold rounded bg-[#e38330]">
+                    <button onClick={buy} className="btn btn-neutral px-8 py-3 text-lg font-semibold rounded bg-[#e38330]">
                       buy
                     </button>
                   </div>
